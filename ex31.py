@@ -31,21 +31,6 @@ elif door == "2":
     else:
         print "The insanity rots your eyes into a pool of muck.  Good job!"
 
-# 附加练习，感觉脑洞好大		
-elif door == "3":
-    print "你来到一片森林，看到了一只小动物。"
-    print "动物是什么呢？" 
-    print "1. 猪"
-    print "2. 狗"
-    print "3. 鸡"
-    
-    dongwu = raw_input("> ")
-    
-    if dongwu == "1" or dongwu == "2":
-        print " 恭喜你，错了"	
-    else:
-        print " (⊙o⊙)哦，对了"
-	
 	
 else:
     print "You stumble around and fall on a knife and die. Good job!"
