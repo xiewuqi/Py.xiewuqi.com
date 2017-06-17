@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 # create a mapping of state to abbreviation
 states = {
-     'Oregon': 'OR',
-     'Florida': 'FL',
-     'California': 'CA',
-     'New york' : 'NY',
-     'Michigan': 'MI'
+     'Oregon': 'OR', # 俄勒冈州
+     'Florida': 'FL', # 佛罗里达州
+     'California': 'CA', # 加利福尼亚州
+     'New York' : 'NY', # 纽约
+     'Michigan': 'MI'   # 密歇根州 
 }
 
 # create a basic set of states and some cities in them
 cities = {
-    'CA': 'San Francisco',
-    'MI': 'Detroit',
-    'FL': 'Jacksonville'
+    'CA': 'San Francisco', # 旧金山
+    'MI': 'Detroit',  # 底特律
+    'FL': 'Jacksonville' # 杰克逊维尔
 }
 
 # add some more cities
@@ -34,17 +34,17 @@ print '-' * 10
 print "Michigan has: ", cities[states['Michigan']]
 print "Florida has: ", cities[states['Florida']]
 
-# print every state abbreviation
+# print every state abbreviation  无序排列
 print '-' * 10
 for state, abbrev in states.items():
-    print "%s has the city %s" % (state, abbrev)
+    print "%s is abbreviated %s" % (state, abbrev)
     
 # print every city in state
 print '-' * 10
 for abbrev, city in cities.items():
     print "%s has the city %s " % (abbrev, city) 
     
-# now do both at the same time
+# now do both at the same time  xxx.get('dx', 变量名)
 print '-' * 10
 for state, abbrev in states.items():
     print "%s state is abbreviated %s and has city %s" % (
