@@ -5,9 +5,9 @@
 # Anything afetr the # is ignored by python.
 
 
-print "I could have code like this." # and the comment afetr is ignored
+print ("I could have code like this.") # and the comment afetr is ignored
 
 # You can also usw a comment to "disabole" or commnet out a piece of code:
 # print "This won't run."
 
-print "This will run."
+print ("This will run.")
