@@ -6,6 +6,7 @@
 - 人生苦短，Python 当歌。
 
 ----
+
 ## 背景知识
 
 >- 什么是Python？
@@ -17,11 +18,6 @@ Python是一种高级程序语言，怎么去理解高级与低级语言呢？
 Python中译 “蟒蛇”，由“龟叔”在1989圣诞节放假的时候发明出来，受到xxx同事们的认可，然后红遍全球。
 - Python的定义 优雅、 简单、明确。 
 
-- 参考
-
-[廖雪峰python教程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431608990315a01b575e2ab041168ff0df194698afac000)
-
-
 ## 目的
 阳老说大五元学科，当代最流行 计算机学科。
 这也是时代的趋势。
@@ -31,7 +27,12 @@ Python中译 “蟒蛇”，由“龟叔”在1989圣诞节放假的时候发明
 打破自己原有的一些结构，给自己画出一幅新地图。
 
 ##  主要资料
-- [笨办法学编程]()
+
+- [Learn Python the Hard Way 3.6](https://learnpythonthehardway.org/python3/)
+- [笨办法学Python 2.7](https://flyouting.gitbooks.io/learn-python-the-hard-way-cn/content/index.html)
+- 推广编程教育的网站：http://www.code.org/ 整理了不少编程入门材料 
+- [廖雪峰python教程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431608990315a01b575e2ab041168ff0df194698afac000)
+
 
 
 ----
@@ -40,4 +41,5 @@ Python中译 “蟒蛇”，由“龟叔”在1989圣诞节放假的时候发明
 
 - 170124  谢武琦创建
 - 170208 增加 【背景】【目的】 
--  170613      上传《笨办法学py》文件
+- 170613      上传《笨办法学py》文件
+- 170622  增加主要资料 删除参考
