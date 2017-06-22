@@ -6,43 +6,43 @@ dogs = 15
 
 
 if people < cats:
-    print " Too many cats! The world is doomend!"
+    print("Too many cats! The world is doomend!")
 	
 if people < cats:
-    print "Not many cats! The world is saved!"
+    print("Not many cats! The world is saved!")
 	
 if people < dogs:
-    print "The world is dry!"
+    print("The world is dry!")
 
 if people > dogs:
-    print "The world is dry!"
+    print("The world is dry!")
 
 
 dogs += 5
 
 if people >= dogs:
-    print "People are greater than or equal to dogs."
+    print("People are greater than or equal to dogs.")
 
 if people <= dogs: 
-    print "People are less than or equal to dogs."
+    print("People are less than or equal to dogs.")
 
 
 if people == dogs:
-    print "People are dogs."
+    print("People are dogs.")
 	
 # 附加练习	
 if True and False:
-    print "True"
+    print("True")
 else:
-    print "False"
+    print("False")
 
 if False or False:	
-    print " True "
+    print(" True ")
 else:
-    print "False"
+    print("False")
 	
 if 3 == 3 and not ("testing" == "testing" or "Pyhong" == "Fun"):
-   print "True"
+   print("True")
 elif  3 == 3 and not ("testing" != "testing" or "Pyhong" != "Fun"):
-    print "False"
+    print("False")
 	
