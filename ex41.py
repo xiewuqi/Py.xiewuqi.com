@@ -1,5 +1,8 @@
-import random
-from urllib import urlopen
+# -*- coding：utf-8 -*-
+``` 这是一个联系如何判断 opp 句式的脚本，你回答之后会出现答案。
+如果暂时看不懂没有关系，会做里面的题就是了。 ```
+import random     
+from urllib.request import urlopen    # 调取一urlopen 的仓库
 import sys
 
 WORD_URL = "http://learncodethehardway.org/words.txt"
@@ -21,13 +24,13 @@ PHRASES = {
 }
 
 # do the want to drill pharases first
-PHRASE_FIRST = False
 if  len(sys.argv) == 2 and sys.argv[1] == "english":
         PHRASE_FIRST = True
-
+else:    
+    PHRASE_FIRST = False
 # ioad up the words from the website
 for word in urlopen(WORD_URL).readlines():
-    WORDS.append(word.strip())
+     WORDS.append(str(word.strip(), encoding="utf-8") )  
 
     
 def convert (snippet, phrase):
@@ -39,7 +42,8 @@ def convert (snippet, phrase):
 
     for i in range(0, snippet.count("@@@")):
         param_count = random.randint(1, 3)
-        param_names.append(', '.join(random.sample(WORDS, param_count)))
+        param_names.append(', '.join(
+            random.sample(WORDS, param_count)))
 
     for sentence in snippet, phrase:
         result = sentence[:]
@@ -58,13 +62,13 @@ def convert (snippet, phrase):
             
         results.append(result)            
         
-    return results
+    return results     #  rusults
         
          
 # keep going until the hit GTRl-D
 try:
     while True:
-        snippets = PHRASES.keys()
+        snippets = list(PHRASES.keys())
         random.shuffle(snippets)
         
         for snippet in snippets:
@@ -73,9 +77,9 @@ try:
             if PHRASE_FIRST:
                 question, answer = answer, question
                 
-            print question
+            print(question)
             
-            raw_input("> ")
-            print "ANSWER: %s\n\n" % answer
+            input("> ") # 输出你的答案
+            print("ANSWER: %s\n\n" % answer)
 except EOFError:
-    print "\nBye"
+    print("\nBye")
