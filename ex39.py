@@ -20,43 +20,43 @@ cities['NY'] = 'New York'
 cities['OR'] = 'Portland'
 
 # print out some cities
-print '-' * 10 
-print "NY state has: ", cities['NY']
-print "OR State has: ", cities['OR']
+print('-' * 10)
+print("NY state has: ", cities['NY'])
+print("OR State has: ", cities['OR'])
 
 # print some states
-print '-' * 10
-print "Michigan's abbreviation is: ", states['Michigan']
-print "Florida's abbreviation is: ", states['Florida']
+print('-' * 10)
+print("Michigan's abbreviation is: ", states['Michigan'])
+print("Florida's abbreviation is: ", states['Florida'])
 
 # do ti by using the state then cities dict  嵌套式应用
-print '-' * 10
-print "Michigan has: ", cities[states['Michigan']]
-print "Florida has: ", cities[states['Florida']]
+print('-' * 10)
+print("Michigan has: ", cities[states['Michigan']])
+print("Florida has: ", cities[states['Florida']])
 
 # print every state abbreviation  无序排列
-print '-' * 10
-for state, abbrev in states.items():
-    print "%s is abbreviated %s" % (state, abbrev)
+print('-' * 10)
+for state, abbrev in states.items():  # items (把字典 ： 拆分成列表形式返回)
+    print("%s is abbreviated %s" % (state, abbrev))
     
 # print every city in state
-print '-' * 10
+print('-' * 10)
 for abbrev, city in cities.items():
-    print "%s has the city %s " % (abbrev, city) 
+    print("%s has the city %s " % (abbrev, city))
     
 # now do both at the same time  xxx.get('dx', 变量名)
-print '-' * 10
+print('-' * 10)
 for state, abbrev in states.items():
-    print "%s state is abbreviated %s and has city %s" % (
-        state, abbrev, cities[abbrev])
+    print("%s state is abbreviated %s and has city %s" % (
+        state, abbrev, cities[abbrev]))
 
-print '-' * 10
+print('-' * 10)
 # safely get a abbreviation by state that might not be there
-state = states.get('Texas', None)
+state = states.get('Texas', None)  #   ‘ ’列表里，None 没有的意思  
 
 if not state:
-    print "Sorry, no Texas."
+    print("Sorry, no Texas.")
 
 # get a city with a default value
 city = cities.get('TX', 'Does Not Exist')
-print "The city for the state 'TX' is: %s" % city
+print("The city for the state 'TX' is: %s" % city)
