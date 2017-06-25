@@ -26,12 +26,14 @@ Python中译 “蟒蛇”，由“龟叔”在1989圣诞节放假的时候发明
 - 打破
 打破自己原有的一些结构，给自己画出一幅新地图。
 
-##  主要资料
+##  参考资料
 
+- [阳志平-如何学习编程-来自认知科学的四个建议](http://www.yangzhiping.com/psy/learn-coding.html)
 - [Learn Python the Hard Way 3.6](https://learnpythonthehardway.org/python3/)
 - [笨办法学Python 2.7](https://flyouting.gitbooks.io/learn-python-the-hard-way-cn/content/index.html)
 - 推广编程教育的网站：http://www.code.org/ 整理了不少编程入门材料 
 - [廖雪峰python教程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431608990315a01b575e2ab041168ff0df194698afac000)
+- Python官网:https://www.python.org/
 
 
 
