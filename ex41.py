@@ -1,6 +1,6 @@
 # -*- coding：utf-8 -*-
-``` 这是一个联系如何判断 opp 句式的脚本，你回答之后会出现答案。
-如果暂时看不懂没有关系，会做里面的题就是了。 ```
+''' 这是一个联系如何判断 opp 句式的脚本，你回答之后会出现答案。
+如果暂时看不懂没有关系，会做里面的题就是了。 '''
 import random     
 from urllib.request import urlopen    # 调取一urlopen 的仓库
 import sys

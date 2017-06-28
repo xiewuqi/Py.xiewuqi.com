@@ -8,7 +8,7 @@ class Scene(object):
 
     def enter(self):
         print("This scene is not yet configured. Subclass it and implement enter().")
-        exit(1)
+        exit(1) # 不直接退出程序，抛出一个异常参数给处理
                 
                 
 # Englie 引擎      
@@ -22,7 +22,7 @@ class Engine(object):
         last_scene = self.scene_map.next_scene('finished')
         
         while current_scene != last_scene:
-            next_scene_name = current_scene.enter()
+            next_scene_name = current_scene.enter()   # 在当前场景不等于最后场时， 下一场景等于= 当前
             current_scene = self.scene_map.next_scene(next_scene_name)
 
         # be sure to print out the last scene
@@ -49,16 +49,16 @@ class Death(Scene):
 class CentralCorridor(Scene):
 
     def enter(self):
-        print("The Gothons of Planet Percal #25 have invaded your ship and destroyed")
-        print("Your entire crew. You are the last surviving member and your last")
-        print("mission is to get the neutron destruct bomb from the Weapons Armory,")
-        print("put it in the bridge, and blow the ship up after getting inot an ")
-        print("escape pod.")
-        print("\n")
-        print("You're runnding down the central corridor to the Weapons Armory when")
-        print("a Gothon jumps out, red scaly skin, drak grimy teeth, and evil clown costume")
-        print("flowing around his hate filled body. He's blocking the door to the")
-        print("Armory and about to pull a weapon to blast you.")
+        print(dedent("The Gothons of Planet Percal #25 have invaded your ship and destroyed"
+              "Your entire crew. You are the last surviving member and your last"
+              "mission is to get the neutron destruct bomb from the Weapons Armory,"
+              "put it in the bridge, and blow the ship up after getting inot an "
+              "escape pod."
+              "\n"
+              "You're runnding down the central corridor to the Weapons Armory when"
+              "a Gothon jumps out, red scaly skin, drak grimy teeth, and evil clown costume"
+              "flowing around his hate filled body. He's blocking the door to the"
+              "Armory and about to pull a weapon to blast you."))
     
         action = input("> ")
     
@@ -83,7 +83,7 @@ class CentralCorridor(Scene):
                   """))
             return 'death'
 
-        elif action == "tell a joke":
+        elif action == "tell a joke": # 讲一个笑话
             print("Lucky for you they made your learn Gothon insults in hte academy.")
             print("You tell the one Ghthon joke you know:")
             print("Lbhe zbgure vf fb sng, jura fur fvgf nebhaq gur ubhfr.")
