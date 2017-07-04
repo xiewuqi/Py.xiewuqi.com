@@ -37,7 +37,7 @@ class Death(Scene):
     ]
 
     def enter(self):
-        print(Death.quips
+        print(Death.quips[]）
         
 
 # 小红帽家
